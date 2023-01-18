@@ -10,12 +10,17 @@ public class BoluAbantIzzetBaysalUniversitesiApiTest {
 	
 	@Test
 	public void testDersEkleme() {
+		List<String> DERSLER = new ArrayList<>();
+		
 		String ders = "C# Uygulamaları";
 		String ders2 = "Java Uygulamaları";
 		
 		BoluAbantIzzetBaysalUniversitesiApi ekle = new BoluAbantIzzetBaysalUniversitesiApi();
 		
-		String eklenen = ekle.DersEkle(ders,ders2);
+		String eklenenDers = ekle.DersEkle(ders,ders2);
+		
+		String dersiVerenOgretmen = eklenenDers;
+		DERSLER.add(dersiVerenOgretmen);
 		
 	}
 	
@@ -30,6 +35,7 @@ public class BoluAbantIzzetBaysalUniversitesiApiTest {
 	
 	@Test
 	public void testDersSilme() {
+		List<String> DERSLER = new ArrayList<>();
 		
 		int CUygulamaları = 1;
 		int JavaUygulamaları = 2;

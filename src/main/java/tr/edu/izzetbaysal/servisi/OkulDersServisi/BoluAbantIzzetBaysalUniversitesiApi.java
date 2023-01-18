@@ -26,13 +26,16 @@ public class BoluAbantIzzetBaysalUniversitesiApi {
 	}
 	
 	@GetMapping("/listele")
-	public List<String> listele(){
+	public List<String> DersListeleme(){
 		return DERSLER;
 	}
 	
 	@PostMapping("/ekle")
 	public String DersEkle(@RequestBody String eklenen, String ders) {
 		DERSLER.add(eklenen);
+		
+		String dersiVerenOgretmen = "Ozkan Sari"+eklenen;
+		DERSLER.add(dersiVerenOgretmen);
 		
 		return null;
 	}
