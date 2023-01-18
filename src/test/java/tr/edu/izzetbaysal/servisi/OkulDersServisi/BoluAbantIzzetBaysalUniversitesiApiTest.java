@@ -23,8 +23,7 @@ public class BoluAbantIzzetBaysalUniversitesiApiTest {
 	public void testDersListeleme () {
 		List<String> DERSLER = new ArrayList<>();
 		
-		DERSLER.add("C# Uygulamaları");
-		DERSLER.add("Java Uygulamaları");
+		System.out.println(DERSLER);
 		
 		return;
 	}
