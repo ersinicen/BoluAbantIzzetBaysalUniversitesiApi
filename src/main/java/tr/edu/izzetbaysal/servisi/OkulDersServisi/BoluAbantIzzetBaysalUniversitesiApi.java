@@ -8,7 +8,7 @@ import org.springframework.web.bind.annotation.*;
 
 @SpringBootApplication
 @RestController
-@RequestMapping("/servis")
+@RequestMapping("/ders")
 public class BoluAbantIzzetBaysalUniversitesiApi {
 	
 	private static final List<String> DERSLER = new ArrayList<>();
@@ -30,12 +30,14 @@ public class BoluAbantIzzetBaysalUniversitesiApi {
 		return DERSLER;
 	}
 	
+	@PostMapping("/ekle")
 	public String DersEkle(@RequestBody String eklenen, String ders) {
 		DERSLER.add(eklenen);
 		
 		return null;
 	}
 	
+	@PostMapping("/sil")
 	public String DersSilme(int CUygulamaları, int JavaUygulamaları) {
 		DERSLER.remove(JavaUygulamaları);
 		DERSLER.remove(CUygulamaları);
