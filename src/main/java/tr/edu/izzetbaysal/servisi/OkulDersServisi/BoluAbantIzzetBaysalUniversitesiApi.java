@@ -11,7 +11,8 @@ import org.springframework.web.bind.annotation.*;
 @RequestMapping("/servis")
 public class BoluAbantIzzetBaysalUniversitesiApi {
 	
-	private static final List<String> DERSLER = new ArrayList<>();{
+	private static final List<String> DERSLER = new ArrayList<>();
+	{
 		DERSLER.add("C Uygulamaları");
 		DERSLER.add("Java Uygulamaları");
 		DERSLER.add("Web Tasarım");
