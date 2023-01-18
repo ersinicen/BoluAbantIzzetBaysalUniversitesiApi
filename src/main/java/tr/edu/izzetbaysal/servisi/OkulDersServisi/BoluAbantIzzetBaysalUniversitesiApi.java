@@ -21,9 +21,10 @@ public class BoluAbantIzzetBaysalUniversitesiApi {
 		int CUygulamaları = 1;
 		int JavaUygulamaları = 2;
 		
-		DERSLER.remove(1);
-		DERSLER.remove(2);
+		DERSLER.remove(JavaUygulamaları);
+		DERSLER.remove(CUygulamaları);
 	}
+	
 	@GetMapping("/listele")
 	public List<String> listele(){
 		return DERSLER;

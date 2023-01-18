@@ -16,6 +16,7 @@ public class BoluAbantIzzetBaysalUniversitesiApiTest {
 		BoluAbantIzzetBaysalUniversitesiApi ekle = new BoluAbantIzzetBaysalUniversitesiApi();
 		
 		String eklenen = ekle.DersEkle(ders,ders2);
+		
 	}
 	
 	@Test
@@ -37,6 +38,7 @@ public class BoluAbantIzzetBaysalUniversitesiApiTest {
 		BoluAbantIzzetBaysalUniversitesiApi sil = new BoluAbantIzzetBaysalUniversitesiApi();
 		
 		String silinen =sil.DersSilme(1, 2);
+		
 		
 	}
 
